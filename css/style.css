@@ -1,0 +1,22 @@
+body{
+  background-color:antiquewhite;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px;
+}
+
+h1{
+  font-size: xx-large;
+  color: blueviolet;
+  font-weight: bold;
+  /* padding: 10px, 0, 10px, 0; */
+}
+
+p{
+  padding: 10px
+
+}
+
+dt{
+  color: rgb(45, 15, 73);
+  font-weight: bold;
+}
