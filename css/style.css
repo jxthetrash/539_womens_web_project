@@ -22,6 +22,12 @@ p{
 
 }
 
+img {
+  border: 1px yellow dashed;
+  box-shadow: inset 1 px black;
+}
+
+
 dt{
   color: rgb(45, 15, 73);
   font-weight: bold;
@@ -29,4 +35,9 @@ dt{
 
 footer{
   color: grey;
+}
+
+img.headShots {
+  border: 1vm yellow dashed;
+  box-shadow: inset 1 px black;
 }
