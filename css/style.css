@@ -11,6 +11,12 @@ h1{
   /* padding: 10px, 0, 10px, 0; */
 }
 
+h2{
+  color: blueviolet;
+  font-size: 110%;
+  font-weight: bold;
+}
+
 p{
   padding: 10px
 
@@ -19,4 +25,8 @@ p{
 dt{
   color: rgb(45, 15, 73);
   font-weight: bold;
+}
+
+footer{
+  color: grey;
 }
