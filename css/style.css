@@ -1,5 +1,5 @@
 nav{
-  padding: 0.1%;
+  padding: 2%;
   background-color: ivory;
 }
 
@@ -11,30 +11,49 @@ li a{
 body{
   background-color:antiquewhite;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 10px;
+  padding: 3%;
+}
+
+main{
+  padding: 2%;
 }
 
 h1{
   font-size: xx-large;
   color: blueviolet;
   font-weight: bold;
-  /* padding: 10px, 0, 10px, 0; */
+  padding-top: 5%;
 }
 
 h2{
   color: blueviolet;
-  font-size: 110%;
+  font-size: x-large;
   font-weight: bold;
+  padding: 5% 2% 0px 2%;
+}
+
+h3{
+  color: blueviolet;
+  font-size: large;
+  font-weight: bold;
+  padding: 2%;
+}
+
+div{
+  padding: 2%;
 }
 
 p{
-  padding: 10px
-
+  padding: 0px 3% 0px 3%;
 }
 
 img {
-  border: 1px rgb(238, 214, 0) dashed;
-  box-shadow: 5 px black;
+  border: 2px rgb(255, 255, 255) dashed;
+  /* box-shadow: 5 px black; */
+  width: 50%;
+  margin: 3%;
+  padding: 1%;
+  border-radius: 10px;
 }
 
 dt{
@@ -51,11 +70,11 @@ footer{
   color: grey;
 }
 
-.headShots {
+/* .headShots {
   padding: 5px;
   border: 1px burlywood dashed;
   box-shadow: 1 px black;
-}
+} */
 
 .active{
   padding: 4px;
@@ -64,4 +83,32 @@ footer{
   text-decoration: underline dotted;
   color: rgb(26, 26, 255);
   font-weight: bold;
+}
+
+img:nth-of-type(even){
+  border: dashed 2px rgb(126, 126, 126);
+  width: 50%;
+  margin: 3%;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+body > main > div:nth-child(even) > img{
+  border: dashed 2px rgb(126, 126, 126);
+  width: 50%;
+  margin: 3%;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+main ul{
+  display: flex;
+  flex-direction: column;
+}
+
+main ul li {
+  list-style-type: "-";
+  margin: 2px;
+  padding: 0px;
+  padding-left: 5%;
 }
