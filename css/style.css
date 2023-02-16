@@ -9,7 +9,7 @@ li a{
 }
 
 body{
-  background-color:antiquewhite;
+  background-color:rgb(255, 246, 234);
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 3%;
 }
@@ -67,7 +67,7 @@ li{
 }
 
 footer{
-  color: grey;
+  color: rgb(23, 23, 23);
 }
 
 /* .headShots {
