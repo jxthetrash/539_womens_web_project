@@ -165,6 +165,13 @@ body > footer > a {
 }
 
 @media screen and (max-width:700px) {
+  body{
+    background-color: antiquewhite;
+    background-image: url('../images/background-pattern.jpg');
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 3%;
+  }
+  
   body > header > nav > ul{
     display: flex;
     flex-wrap: wrap;
