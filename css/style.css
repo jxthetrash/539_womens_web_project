@@ -1,3 +1,9 @@
+a.skip{
+  position: absolute;
+  left: -400px;
+  top: -200px;
+}
+
 nav{
   padding: 2%;
   background-color: ivory;
