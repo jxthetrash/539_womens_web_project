@@ -74,6 +74,12 @@ img {
   to {opacity: 1;}
 }
 
+@media (prefers-reduced-motion) {
+  #home-image{
+    animation: none;
+  }
+}
+
 dt{
   color: rgb(45, 15, 73);
   font-weight: bold;
