@@ -10,6 +10,7 @@ li a{
 
 body{
   background-color: antiquewhite;
+  background-image: url('/images/background-pattern.jpg');
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 3%;
 }
@@ -23,6 +24,7 @@ h1{
   color: blueviolet;
   font-weight: bold;
   padding-top: 5%;
+  font-family: "Abril Fatface", Georgia, 'Times New Roman', Times, serif, cursive;
 }
 
 h2{
@@ -111,4 +113,8 @@ main ul li {
 
 footer {
   color: #696969;
+}
+
+@media screen and (min-width:700px) {
+  
 }
