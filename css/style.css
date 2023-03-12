@@ -1,6 +1,10 @@
 nav{
   padding: 2%;
   background-color: ivory;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
 }
 
 li a{
@@ -56,6 +60,18 @@ img {
   margin: 3%;
   padding: 1%;
   border-radius: 10px;
+}
+
+#home-image{
+  width: 90%;
+  animation-name: home;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes home {
+  from{opacity: 0;}
+  to {opacity: 1;}
 }
 
 dt{
@@ -115,6 +131,73 @@ footer {
   color: #696969;
 }
 
-@media screen and (min-width:700px) {
+body > footer > a {
+  padding: 0px 3% 0px 3%;
+}
+
+.grid{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: 5%;
+  border-radius: 25px;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 5%;
+  row-gap: 10px ;
+}
+
+.grid div{
+  border: rgba(0, 0, 0, 0.3) 2px solid;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
+@media screen and (max-width:700px) {
+  body > header > nav > ul{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 150%;
+  }
+  body > header > nav > ul > li {
+    padding: 1%;
+  }
+  body > header > nav > ul > li > a {
+    white-space: nowrap;
+    padding: 0%;
+  }
+  .grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border-radius: 25px;
+    grid-template-columns: 1fr;
+    column-gap: 5%;
+    row-gap: 10px ;
+    /*Set width, margin, border properties, background color, and grid properties */
+  }
   
+}
+
+#accordion-1 {
+  background-color: #d8d4ba;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+#panel-1 {
+  padding-bottom: 3%;
+  background-color: white;
+  overflow: hidden;
+}
+.inactive{
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
