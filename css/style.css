@@ -68,6 +68,10 @@ img {
   border-radius: 10px;
 }
 
+dl {
+  padding-top: 3%;
+}
+
 #home-image{
   width: 90%;
   animation-name: home;
@@ -161,17 +165,59 @@ body > footer > a {
 .grid div{
   border: rgba(0, 0, 0, 0.3) 2px solid;
   border-radius: 25px;
-  background-color: rgba(0, 0, 0, 0.11);
+  background-color: rgba(233, 231, 209, 0.758);
 }
 
-@media screen and (max-width:700px) {
+.accordion {
+  background-color: #d8d4ba;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: 2px;
+}
+
+.panel {
+  padding-bottom: 3%;
+  background-color: white;
+  overflow: hidden;
+}
+
+main > dl > div > dd:nth-child(2) > p {
+  margin-bottom: 30px;
+}
+
+.inactive{
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: "\2796";
+}
+
+@media screen and (max-width:600px) {
   body{
     background-color: antiquewhite;
     background-image: url('../images/background-pattern.jpg');
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 3%;
   }
-  
+
   body > header > nav > ul{
     display: flex;
     flex-wrap: wrap;
@@ -183,6 +229,10 @@ body > footer > a {
   body > header > nav > ul > li > a {
     white-space: nowrap;
     padding: 0%;
+  }
+  .skip{
+    padding: 2%;
+    position: static;
   }
   .grid{
     display: grid;
@@ -197,31 +247,24 @@ body > footer > a {
   
 }
 
-#accordion-1 {
-  background-color: #d8d4ba;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-#panel-1 {
-  padding-bottom: 3%;
-  background-color: white;
-  overflow: hidden;
-}
-.inactive{
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-}
-
-@media screen and (max-width:961px) {
+@media screen and (min-width:600px) and (max-width:900px) {
+  body > header > nav > ul{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 150%;
+    justify-content: flex-end;
+  }
+  body > header > nav > ul > li {
+    padding: 1%;
+  }
+  body > header > nav > ul > li > a {
+    white-space: nowrap;
+    padding: 0%;
+  }
+  .skip{
+    padding: 2%;
+    position: static;
+  }
   .grid{
     display: grid;
     justify-content: center;
