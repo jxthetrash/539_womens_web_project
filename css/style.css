@@ -220,3 +220,17 @@ body > footer > a {
   display: none;
   overflow: hidden;
 }
+
+@media screen and (max-width:961px) {
+  .grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border-radius: 25px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    row-gap: 40px;
+    /*Set width, margin, border properties, background color, and grid properties */
+  }
+  
+}
