@@ -191,18 +191,19 @@ li{
   padding: 5%;
 }
 
-.history img:nth-of-type(odd){
+#history-grid div img{
   border: dashed 2px #ff8c00;
   width: 50%;
   padding: 1%;
   border-radius: 10px;
 }
-img:nth-of-type(even){
+#history-grid > div:nth-of-type(even) > img{
   border: dashed 2px rgb(126, 126, 126);
   width: 50%;
   padding: 1%;
   border-radius: 10px;
 }
+
 
 body img {
   display: block;
@@ -259,9 +260,9 @@ footer{
   position: absolute;
   bottom: 0px;
   height: 2.5rem;
-  width: 90%;
+  width: 100%;
   padding-top: 3%;
-
+  border-top: solid 1px #6F6D6D ;
 }
 
 footer p {
@@ -271,12 +272,16 @@ footer p {
 
 footer a {
   padding-left: 3%;
+  padding-bottom: 3%;
 }
-
 
 .grid div{
   border-radius: 5px;
   background-color: #fad9ad;
+}
+
+#history-grid > div:last-child{
+  padding-bottom: 4%;
 }
 
 .accordion {
@@ -387,6 +392,20 @@ footer a {
     margin-top: 0%;
     padding-top: 0%;
   }
+  #history-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2%;
+  }
+  #history-grid div:nth-child(even){
+    border-left: 1px solid black;
+  }
+  #history-grid div{
+    border-bottom: 1px solid black;
+    padding: 3%;
+    padding-bottom: 5%;
+  }
+
   .grid{
     display: grid;
     justify-content: center;
@@ -396,7 +415,10 @@ footer a {
     column-gap: 5%;
     row-gap: 40px;
   }
-  
+  footer{
+    border: none;
+    padding-top: 1%;
+  }
 }
 
 @media screen and (min-width:900px) {
