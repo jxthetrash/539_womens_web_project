@@ -175,9 +175,15 @@ dt{
   padding: 5%;
   font-size: large;
 }
-
-#main > dl > div{
-  margin-left: 2px;
+dd{
+  padding-bottom: 2%;
+  margin-left: 3px;
+}
+#main > dl > dd > p:last-child{
+  padding-bottom: 4%;
+}
+#main > dl > dd > h3:nth-child(1){
+  padding-top: 5%;
 }
 
 li{
@@ -290,10 +296,6 @@ footer a {
   padding-bottom: 3%;
   background-color: white;
   overflow: hidden;
-}
-
-main > dl > div > dd:nth-child(2) > p {
-  margin-bottom: 30px;
 }
 
 .inactive{
