@@ -21,50 +21,70 @@
 </head>
 
 <body>
+  <div id="page-container">
   <header>
     
     <nav>
-        <ul>
-          <li><a class="active" href="index.html">About</a></li>
-          <li><a href="literature.html">Literature</a></li>
-          <li><a href="history.html">History and Politics</a></li>
-          <li><a href="femdict.html">Feminist Dictionary</a></li>
-        </ul>
+      <img src="images/logoCropped.png" href="#index.html" class="active" id="logo"/>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+      <ul id="navLinks"> 
+        <li><a class="active" href="index.html">About</a></li>
+        <li><a href="literature.html">Literature</a></li>
+        <li><a href="history.html">History and Politics</a></li>
+        <li><a href="femdict.html">Feminist Dictionary</a></li>
+      </ul>
+      
+      
     </nav>
-    <h1> Woman's Web </h1>
+    
     <a href="#main" class="skip">Skip to Main Content</a>
   </header>
 
   <main id="main">
-    <img src="images/women_march_pano.jpg" id="home-image" alt="Image of a crowd of people outside in Ann Arbor for the Ann Arbor Women's March">
-
+    <div id="banner">
+      <img src="images/women_march_pano.jpg" id="home-image" alt="Image of a crowd of people outside in Ann Arbor for the Ann Arbor Women's March">
+      <h1> Woman's Web </h1>
+    </div>
+    
     <div>
       <p>
-        This website started as an idea when Kelsey Toporski was a freshman in college taking my first <a href="https://lsa.umich.edu/women"> Women's Studies</a> class. As a junior, she had the skill set to make it happen. Growing up in a small, rural, conservative town, this class was really her first introduction to feminism and feminist thought, and she wanted to share her new found knowledge with others. This website is where a lot of feminist things could be compiled in one place, purely because people might not otherwise know about it. Her hometown may not have been forward thinking, but it did have internet connection.
+        This website started as an idea when Kelsey Toporski was a freshman in college taking my first Women's Studies class. As a junior, she had the skill set to make it happen. Growing up in a small, rural, conservative town, this class was really her first introduction to feminism and feminist thought, and she wanted to share her new found knowledge with others. This website is where a lot of feminist things could be compiled in one place, purely because people might not otherwise know about it. Her hometown may not have been forward thinking, but it did have internet connection.
       </p>
       <p>
         This website currently contains 3 pages other than this one - click below to see a short description of each!
       </p>
     </div>
 
-      <h2>Literature</h2>
-      <div>
-        <p>
-          This page features books written by women and for women, books and essays about feminism, poems, plays, and bios of female writers.
-        </p>
-      </div>
-      <h2>History / Politics</h2>
-      <div>
-        <p>
-          This page features bios of important women in history and women currently in Congress or otherwise politically involved.
-        </p>
-      </div>
-      <h2>Feminist Dictionary</h2>
-      <div>
+    <div id="home-tabs">
+      <a calss="tab-links" href="literature.html">
+        <div class="tabs">
+          <h2>Literature</h2>
+          <p>
+            This page features books written by women and for women, books and essays about feminism, poems, plays, and bios of female writers.
+          </p>
+        </div>
+      </a>
+      
+      <a calss="tab-links" href="history.html">
+        <div class="tabs">
+          <h2>History / Politics</h2>
+          <p>
+            This page features bios of important women in history and women currently in Congress or otherwise politically involved.
+          </p>
+        </div>  
+      </a>
+      
+      <a calss="tab-links" href="femdict.html">
+        <div class="tabs">
+        <h2>Feminist Dictionary</h2>
         <p>
           This page features a collection of important feminist terminology that might make reading easier. These will include formal definitions and my own understandings of the terms.
         </p>
       </div>
+      </a>
+    </div>
 
     <div>
       <p>
@@ -77,9 +97,21 @@
     <p class="thanks">
       Thanks for visiting! <i class="far fa-grin"></i>
     </p>
-    <p>Orginal content created by Kelsey Toporski <i class="fa-regular fa-copyright"></i> 2019</p>
+    <p> Orginal content created by Kelsey Toporski 2019</p>
     <a href="#top" class="tops">Back to Top</a>
   </footer>
+</div>
+  
+<script>
+  function myFunction() {
+  var x = document.getElementById("navLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
 </body>
 </html>
