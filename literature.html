@@ -24,7 +24,9 @@
   <div id="page-container">
   <header>
     <nav>
-      <img src="images/logoCropped.png" href="#index.html" class="active" id="logo"/>
+      <a href="index.html" class="logo">
+        <img src="images/logoCropped.png" class="active logo" id="logo-image"/>
+      </a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa-solid fa-bars"></i>
       </a>
@@ -259,6 +261,16 @@
       <a href="#top" class="tops">Back to Top</a>
     </footer>
     
-  </div> 
+  </div>
+  <script>
+    function myFunction() {
+    var x = document.getElementById("navLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script> 
   </body>
 </html>

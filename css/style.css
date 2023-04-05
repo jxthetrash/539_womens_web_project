@@ -14,16 +14,19 @@ body{
   background-color: rgba(250, 235, 215, 0.688);
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-#home-image{
-  animation-name: home;
-  animation-duration: 4s;
-  animation-iteration-count: 1;
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-  border-radius: 0%;
-  text-align: center;
+
+#banner {
+  background-image: url("../images/women_march_pano.jpg");
+  background-size: cover;
+  height: 20vh;
+  margin-bottom: 3vh;
 }
+
+#banner h1 {
+  text-shadow: #fad9ad 5px 5px 5px;
+  margin-top: 0%;
+}
+
 nav{
   overflow: hidden;
   background-color: #ffe7c8;
@@ -35,11 +38,20 @@ nav{
   justify-content: space-around;
 }
 
-#logo{
+.logo{
+  display: block;
   width: 2em;
   border: none;
   padding: 0%;
-  margin-top: 5%;
+  margin: auto;
+  margin-left: 3%;
+  text-align: left;
+}
+
+#logo-image{
+  animation-name: home;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
 }
 
 #navLinks{
@@ -49,11 +61,11 @@ nav{
   padding: 0%;
 }
 
-nav a {
+#navLinks > li > a {
   color: black;
   white-space: nowrap;
   text-decoration: none;
-  font-size: large;
+  font-size: 2.5vw;
   display: block;
   text-align: center;
 }
@@ -66,7 +78,7 @@ nav a.icon{
   padding: 5%;
 }
 
-nav a:hover{
+#navLinks > li > a:hover{
   color: #ba6900;
   text-decoration: underline;
 }
@@ -76,14 +88,16 @@ nav a:hover{
   color: #1b1610;
   font-weight: bold;
 }
+
 .grid{
     display: grid;
     justify-content: center;
     align-content: center;
     border-radius: 25px;
     grid-template-columns: 1fr;
-    column-gap: 5%;
+    column-gap: 2%;
     row-gap: 10px ;
+    margin: 3%;
 }
 
 body a{
@@ -130,9 +144,14 @@ img {
   border-radius: 10px;
 }
 
-dl {
-  padding-top: 3%;
+img:hover{
+  box-shadow: 10px 10px 5px #8d8d8d
 }
+
+dl {
+  padding: 3%;
+}
+
 
 #home-tabs a{
   text-decoration: none;
@@ -150,8 +169,15 @@ dl {
 }
 
 dt{
-  color: rgb(45, 15, 73);
+  color: rgb(0, 0, 0);
   font-weight: bold;
+  margin: 3%;
+  padding: 5%;
+  font-size: large;
+}
+
+#main > dl > div{
+  margin-left: 2px;
 }
 
 li{
@@ -159,26 +185,63 @@ li{
   padding: 5%;
 }
 
-/* .headShots {
-  padding: 5px;
-  border: 1px burlywood dashed;
-  box-shadow: 1 px black;
-} */
-
+.history img:nth-of-type(odd){
+  border: dashed 2px #ff8c00;
+  width: 50%;
+  padding: 1%;
+  border-radius: 10px;
+}
 img:nth-of-type(even){
   border: dashed 2px rgb(126, 126, 126);
   width: 50%;
-  margin: 3%;
   padding: 1%;
   border-radius: 10px;
 }
 
-body > main > div:nth-child(even) > img{
-  border: dashed 2px rgb(126, 126, 126);
-  width: 50%;
+body img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main > div:nth-child(2) > p:nth-child(2){
+  padding-top: 2%;
+}
+
+#home-tabs > {
+  margin-bottom: 5%;
+}
+
+#home-tabs{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2% 3% 3% 3%;
+  row-gap: 3%;
+}
+
+.tabs{
+  background-color: #fad9ad;
   margin: 3%;
-  padding: 1%;
-  border-radius: 10px;
+  padding: 3%;
+  text-decoration: none;
+  height: 100%;
+}
+#home-tabs a{
+  text-decoration: none;
+}
+#home-tabs > a > div > h2:hover{
+  text-decoration: underline;
+}
+.tabs:hover {
+  background-color: #ba690081;
+}
+#home-tabs > div > p{
+  padding: 5%;
+}
+
+#main > div:nth-child(4) > p{
+  padding-top: 5%;
+  margin-top: 5%;
 }
 
 #page-container{
@@ -204,25 +267,14 @@ footer a {
   padding-left: 3%;
 }
 
-.grid{
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  margin: 5%;
-  border-radius: 25px;
-  grid-template-columns: 30% 30% 30%;
-  column-gap: 5%;
-  row-gap: 10px ;
-}
 
 .grid div{
-  border: rgba(0, 0, 0, 0.3) 2px solid;
-  border-radius: 25px;
-  background-color: rgba(233, 231, 209, 0.758);
+  border-radius: 5px;
+  background-color: #fad9ad;
 }
 
 .accordion {
-  background-color: #d8d4ba;
+  background-color: #fad9ad;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -265,41 +317,9 @@ main > dl > div > dd:nth-child(2) > p {
 
 
 @media screen and (min-width:600px) {
-  body > header > nav > ul{
-    display: flex;
-    flex-wrap: wrap;
-    line-height: 150%;
-    justify-content: flex-end;
-  }
-  body > header > nav > ul > li {
-    padding: 1%;
-    margin-right: 1em;
-  }
-  body > header > nav > ul > li > a {
-    white-space: nowrap;
-    padding: 0%;
-  }
- 
-  .grid{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    border-radius: 25px;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 5%;
-    row-gap: 40px;
-  }
-  
-}
-
-@media screen and (min-width:900px) {
-  body{
-    background-color: rgba(250, 235, 215, 0.688);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
   nav{
     padding: 0%;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: #ffe7c8;
     display:grid;
     grid-template-columns: 10% 90%;
     justify-content: space-between;
@@ -315,12 +335,22 @@ main > dl > div > dd:nth-child(2) > p {
     display: inline-block;
     padding: 2%;
   }
-  #logo.active{
+  .logo{
     display: block;
     margin: auto;
     background-color: #ffffff00;
     width: 5em;
     padding: 10%;
+    border: none;
+    text-align: left;
+  }
+  .logo.active{
+    display: block;
+    margin: auto;
+    background-color: #ffffff00;
+    width: 5em;
+    padding: 10%;
+    border: none;
   }
   li a{
     color: black;
@@ -350,25 +380,44 @@ main > dl > div > dd:nth-child(2) > p {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 2% 3% 3% 3%;
   }
-  .tabs{
-    /* background-image: url("../images/stickNote.png"); */
-    background-color: #fad9ad;
-    margin: 2%;
-    padding: 3%;
-    text-decoration: none;
-    height: 100%;
+
+  #main > div:nth-child(4) > p{
+    margin-top: 0%;
+    padding-top: 0%;
   }
-  #home-tabs a{
-    text-decoration: none;
-  }
-  #home-tabs > a > div > h2:hover{
-    text-decoration: underline;
-  }
- .tabs:hover {
-    background-color: #ba690081;
-  }
-  #home-tabs > div > p{
-    padding: 5%;
+  .grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border-radius: 25px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    row-gap: 40px;
   }
   
+}
+
+@media screen and (min-width:900px) {
+  body{
+    background-color: rgba(250, 235, 215, 0.688);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  #navLinks > li > a {
+    color: black;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: large;
+    display: block;
+    text-align: center;
+  }
+  .grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 5% 0%;
+    border-radius: 25px;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 3%;
+    row-gap: 1% ;
+  }
 }
